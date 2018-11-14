@@ -6,11 +6,11 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_loading"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_task"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="loading"
-         />
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
 
 </LinearLayout>

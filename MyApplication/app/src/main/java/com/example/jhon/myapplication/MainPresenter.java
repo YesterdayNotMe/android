@@ -8,15 +8,11 @@ import com.android.mvp.BasePresenter;
 
 public class MainPresenter extends BasePresenter<IMainView> {
 
-    @Execute(threadMode=ThreadMode.WORK)
-    public void loading(){
-        Log.e("weichao","run thread == "+Thread.currentThread().getName()) ;
-        showToast() ;
-    }
-    @Execute(threadMode = ThreadMode.MAIN)
-    public void showToast(){
-        Log.e("weichao","run thread == "+Thread.currentThread().getName()) ;
-        getView().showToast();
+    public void fetchOffers() {
+        if (getView() != null) {
+            OfferModel model = new OfferModel();
+            getView().refresh(model.fetchOffers());
+        }
     }
 
 }

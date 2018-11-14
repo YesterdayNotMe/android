@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <external-path
+            name="files_root"
+            path="/storage/emulated/0/Android/data/com.example.jhon.myapplication/cache/tmpdir1/" />
+    </paths>
+</resources>
